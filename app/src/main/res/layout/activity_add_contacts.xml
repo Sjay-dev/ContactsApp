@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Add_Contacts">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="Add Contacts"
+        app:titleTextColor="@color/purple"
+        android:id="@+id/ToolbarAddContacts"
+        >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnSave"
+            android:layout_alignParentEnd="true"
+            android:text="Save"
+            android:layout_marginLeft="155dp"
+            />
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ImageView
+        android:id="@+id/ivAddContactProfileImage"
+        android:layout_width="191dp"
+        android:layout_height="157dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="81dp"
+        android:layout_marginEnd="112dp"
+        android:src="@drawable/account_circle"
+        />
+
+    <EditText
+        android:id="@+id/edtFirstName"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="276dp"
+        android:drawableStart="@drawable/name"
+        android:drawablePadding="3dp"
+        android:drawableTint="@color/purple"
+        android:ems="10"
+        android:hint="First Name"
+        android:inputType="text" />
+
+
+    <EditText
+        android:id="@+id/edtNumber"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtFirstName"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="30dp"
+        android:drawableStart="@drawable/numberphone"
+        android:drawablePadding="3dp"
+        android:drawableTint="@color/purple"
+        android:ems="10"
+        android:hint="Number"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/edtEmail"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtNumber"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="30dp"
+        android:drawableStart="@drawable/email"
+        android:drawablePadding="3dp"
+        android:drawableTint="@color/purple"
+        android:hint="Email"
+        android:inputType="textEmailAddress" />
+
+
+
+</RelativeLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditContacts">
+
+    <ImageView
+        android:id="@+id/ivEditContactImage"
+        android:layout_width="191dp"
+        android:layout_height="157dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="81dp"
+        android:layout_marginEnd="112dp"
+        android:src="@drawable/account_circle"
+        />
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ivEditContactImage"
+        android:layout_centerInParent="true"
+        >
+
+        <EditText
+            android:id="@+id/edtUpdateName"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="48dp"
+            android:ems="10"
+            android:hint="Name"
+            android:drawableStart="@drawable/name"
+            android:drawablePadding="3dp"
+            android:drawableTint="@color/purple"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/edtUpdateNumber"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edtUpdateName"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="35dp"
+            android:hint="Number"
+            android:drawableStart="@drawable/numberphone"
+            android:drawablePadding="3dp"
+            android:drawableTint="@color/purple"
+            android:inputType="number"/>
+
+        <EditText
+            android:id="@+id/edtUpdateEmail"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edtUpdateNumber"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="35dp"
+            android:hint="Email"
+            android:drawableStart="@drawable/email"
+            android:drawablePadding="3dp"
+            android:drawableTint="@color/purple"
+            android:inputType="textEmailAddress" />
+
+        <Button
+            android:id="@+id/btnUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edtUpdateNumber"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="206dp"
+            android:layout_marginEnd="22dp"
+            android:text="Save" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
